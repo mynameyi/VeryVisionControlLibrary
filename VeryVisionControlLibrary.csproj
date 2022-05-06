@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC14703B-6258-492C-83E1-87F182F624C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VeryVisionControlLibrary</RootNamespace>
+    <AssemblyName>vvcl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Barcode.resx">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compass.resx">
+      <DependentUpon>Compass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emulator.resx">
+      <DependentUpon>Emulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxWithLabel.resx">
+      <DependentUpon>TextBoxWithLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleBox.resx">
+      <DependentUpon>TitleBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBar.resx">
+      <DependentUpon>ToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Barcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Barcode.Designer.cs">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compass.Designer.cs">
+      <DependentUpon>Compass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emulator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Emulator.Designer.cs">
+      <DependentUpon>Emulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LatticeWord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxWithLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBoxWithLabel.Designer.cs">
+      <DependentUpon>TextBoxWithLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TitleBox.Designer.cs">
+      <DependentUpon>TitleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBar.Designer.cs">
+      <DependentUpon>ToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentForm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hydrangeas2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\表盘指针.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\表盘指针.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial381_215.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Needle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Needle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Needle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\站点提示框.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="doc\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
